@@ -34,8 +34,8 @@ class BaseModel:
 
     def to_dict(self):
         """Returns the dictionary of the BaseModel instance"""
-        inst_dict = self__dict__.copy()
-        inst_dict["__class__"] = self.__class__.name__
+        inst_dict = self.__dict__.copy()
+        inst_dict["__class__"] = self.__class__.__name__
         inst_dict["created_at"] = self.created_at.isoformat()
         inst_dict["updated_at"] = self.updated_at.isoformat()
         return inst_dict

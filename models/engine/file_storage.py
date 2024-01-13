@@ -34,8 +34,8 @@ class FileStorage:
         """Deserialize the JSON file __file_path to __objects, if it exists."""
         try:
             with open(FileStorage.__file_path, 'r', encoding='utf-8') as file:
-               json_load = json.load(file)
+                json_load = json.load(file)
             for key, value in json_load.items():
                 FileStorage.__object[key] = Basemodel(**value)
-        except:
+        except Exception:
             pass

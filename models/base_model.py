@@ -25,11 +25,13 @@ class BaseModel:
                 else:
                     self.__dict__[key] = value
         else:
+            from .__init__ import storage
             models.storage.new(self)
 
     def save(self):
         """current datetime is saved at updated_at"""
         self.updated_at = datetime.now()
+        from .__init__ import storage
         models.storage.save()
 
     def to_dict(self):

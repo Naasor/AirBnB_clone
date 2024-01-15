@@ -55,5 +55,5 @@ class FileStorage:
                         inst = cls(**value)
 
                         FileStorage.__objects[key] = inst
-                except FileNotFoundError:
+                except Exception:
                     pass

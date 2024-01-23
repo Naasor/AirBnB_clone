@@ -1,7 +1,3 @@
-/*
- * === Places class style ===
- */
-
 /* Places flexbox */
 .places {
   display: flex;
@@ -66,19 +62,19 @@
 }
 
 /* Top margin of amenities and reviews classes */
-.places .amenities,
+.places .amenities1,
 .places .reviews {
   margin-top: 40px;
 }
 
 /* Row format for amenities list */
-.places .amenities li {
+.places .amenities1 li {
   display: flex;
   flex-direction: row;
 }
 
 /* Individual amenity style */
-.places .amenities i {
+.places .amenities1 i {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -117,7 +113,7 @@
 }
 
 /* Amenities and reviews header 2 style */
-.places .amenities h2,
+.places .amenities1 h2,
 .places .reviews h2 {
   border-bottom: 1px solid #ddd;
   font-size: 16px;
@@ -132,8 +128,4 @@
   font-weight: bold;
   margin-bottom: 6px;
   margin-top: 20px;
-}
-
-footer {
-  position: relative;
 }
